@@ -14,9 +14,9 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <!-- a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
-      </a>
+      </a> -->
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -213,12 +213,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        Dashboard
+        <!-- <small>Optional description</small> -->
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
+        <li><a href="<?php echo site_url("home_controller");?>"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
       </ol>
     </section>
 
@@ -239,7 +239,7 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2016 <a href="#">Right Technology</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -323,6 +323,21 @@
 <script>
   $(function() {
     $('.load_view').load('<?php echo site_url("dashboard_controller");?>');
-    // animateLoadView();
+    animateLoadView();
+
+    $('.menu_item').click(function(){
+      event.preventDefault();  
+      $('.load_view').load($(this).attr('href'));
+
+    });
+
   });
+
+  function animateLoadView() {
+    $('.load_view').slideUp('1000');
+    $('.load_view').slideDown('1000');
+  }
+
+
+
 </script>

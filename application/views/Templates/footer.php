@@ -6,8 +6,12 @@
 <!-- <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script> -->
+
 <!-- Bootstrap 3.3.6 -->
 <script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
+<!-- Data Tables -->
+<script src="<?= base_url(); ?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url(); ?>assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
 <!-- Morris.js charts -->
 <script src="<?= base_url(); ?>assets/js/raphael-min.js"></script>
 <script src="<?= base_url(); ?>assets/js/plugins/morris.min.js"></script>
@@ -32,7 +36,7 @@
 <!-- AdminLTE App -->
 <script src="<?= base_url(); ?>assets/js/app.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?= base_url(); ?>assets/js/dashboard.js"></script>
+<!-- <script src="<?= base_url(); ?>assets/js/dashboard.js"></script> -->
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url(); ?>assets/js/demo.js"></script>
 

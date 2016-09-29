@@ -19,6 +19,14 @@ class Employee extends CI_Model {
 
 		return $user_name;
 	}
+
+	// get all employees
+	public function getEmployee()
+	{
+		$this->db->select('*');
+		$result = $this->db->get('rt_employee_table')->result_array();
+		return $result;
+	}
 }
 
 /* End of file Home_model.php */
