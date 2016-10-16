@@ -321,6 +321,11 @@
 </div>
 
 <script>
+  $(document).ready(function(){
+   $.growl.warning({ message: "The kitten is ugly!" });
+ });
+
+
   $(function() {
     $('.load_view').load('<?php echo site_url("dashboard_controller");?>');
     animateLoadView();
@@ -337,7 +342,7 @@
     $('.load_view').slideUp('1000');
     $('.load_view').slideDown('1000');
   }
-
+  
 
 
 </script>

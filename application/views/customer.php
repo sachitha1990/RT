@@ -69,6 +69,7 @@
       <div class="box box-primary">
         <div class="box-header with-border">
           <h3 class="box-title">Add New Customer</h3>
+          <p style="color: red">Invalid Contact Number</p>
         </div>
         <!-- /.box-header -->
         <!-- form start -->

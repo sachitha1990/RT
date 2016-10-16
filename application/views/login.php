@@ -40,6 +40,7 @@
               
 
               <i class="icons icon-arrow-down"></i>
+              <p style="color: black">Log again.inactive more than 5 mins</p>
               <div class="form-group form-animate-text" style="margin-top:40px !important;">
                 <input type="text" name="username" class="form-text" required>
                 <span class="bar"></span>

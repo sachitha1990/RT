@@ -19,7 +19,7 @@ class Home_Controller extends MY_Controller {
 		$this->load->view('view_template',array(
 			'content'=>'home',
 			'menu_items'=>$this->getMenu(),
-			'user_name'=> $user_name));
+			'user_name'=> $user_name),false);
 	}
 
 }

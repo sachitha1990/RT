@@ -37,9 +37,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- jQuery 2.2.3 -->
   <script src="<?= base_url(); ?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script> 
-  <!-- REQUIRED JS SCRIPTS -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-  <!-- <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script> -->
+  
+  <!-- Add notification plugin -->
+  <script src="<?= base_url(); ?>assets/js/jquery.growl.js" type="text/javascript"></script>
+  <link href="<?=base_url(); ?>assets/css/jquery.growl.css" rel="stylesheet" type="text/css" />
 
 </head>
 
